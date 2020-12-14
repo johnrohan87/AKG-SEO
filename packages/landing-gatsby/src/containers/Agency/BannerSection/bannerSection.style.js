@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import { themeGet } from '@styled-system/theme-get';
-import BannerBG from 'common/src/assets/image/agency/agency-banner.png';
+import BannerBG from 'common/src/assets/image/agency/AKG_BG1.jpg';
 
 const BannerWrapper = styled.section`
   padding-top: 210px;
@@ -39,6 +39,20 @@ const BannerWrapper = styled.section`
   .row {
     position: relative;
     z-index: 1;
+  }
+  .bgContainer{
+    border-radius: 4em;
+  padding: 7px 25px;
+  box-shadow: 0px 4px 50px 0px rgba(22, 53, 76, 0.08);
+  margin-bottom: 30px;
+  background-color: ${themeGet('colors.white', '#ffffff')};
+  }
+  .bgContainerTitle{
+    border-radius: 4em;
+  padding: 7px 50px;
+  box-shadow: 0px 4px 50px 0px rgba(22, 53, 76, 0.08);
+  margin-bottom: 30px;
+  background-color: ${themeGet('colors.white', '#ffffff')};
   }
   .button__wrapper {
     margin-top: 40px;

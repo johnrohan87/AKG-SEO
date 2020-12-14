@@ -19,12 +19,13 @@ const BannerSection = ({
   discountText,
   discountAmount,
   outlineBtnStyle,
+  sectionTitle,
 }) => {
   const ButtonGroup = () => (
     <Fragment>
       <Container>
         <Box >
-          <Heading content="Get Your Free Quote Today!"  />
+          <Heading className="bgContainer" content="Get Your Free Quote Today!" {...sectionTitle} />
         </Box>
         <Box>
           <Box>
@@ -65,15 +66,15 @@ const BannerSection = ({
               <Text content="Free Estimates!" {...discountAmount} />
               <Text content="on all residential and commercial roofs!" {...discountText} />
             </DiscountLabel>
-            <FeatureBlock
+            <FeatureBlock 
               title={
-                <Heading
+                <Heading className="bgContainerTitle"
                   content="AKG Roofing and Specialty Services, INC"
                                     {...title}
                 />
               }
               description={
-                <Text
+                <Text className="bgContainer"
                   content="Repairs, Replaces, and Maintains
                   YOUR Life Investment!"
                   {...description}
@@ -96,6 +97,7 @@ BannerSection.propTypes = {
   discountText: PropTypes.object,
   discountAmount: PropTypes.object,
   outlineBtnStyle: PropTypes.object,
+  sectionTitle: PropTypes.object,
 };
 
 BannerSection.defaultProps = {
@@ -126,9 +128,12 @@ BannerSection.defaultProps = {
     mb: '0',
   },
   btnStyle: {
-    minWidth: ['120px', '156px'],
+    minWidth: '152px',
+    minHeight: '45px',
     fontSize: '14px',
     fontWeight: '500',
+    alignItems: 'center',
+    ml: '1em',
   },
   outlineBtnStyle: {
     minWidth: ['130px', '156px'],
@@ -149,6 +154,15 @@ BannerSection.defaultProps = {
     color: '#0f2137',
     mb: 0,
     as: 'span',
+  },
+  // section title default style
+  sectionTitle: {
+    textAlign: 'center',
+    fontSize: ['20px', '24px'],
+    fontWeight: '400',
+    color: '#0f2137',
+    letterSpacing: '-0.025em',
+    mb: '0',
   },
 };
 
