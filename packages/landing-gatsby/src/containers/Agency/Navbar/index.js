@@ -13,7 +13,7 @@ import SearchPanel from '../SearchPanel';
 import LoginModal from '../LoginModal';
 import CopyrightSection from '../CopyrightsSection';
 
-import LogoImage from 'common/src/assets/image/agency/logo.png';
+import LogoImage from 'common/src/assets/image/agency/AKG_Master_Logo2_TRANSP.png';
 
 import { DrawerContext } from 'common/src/contexts/DrawerContext';
 

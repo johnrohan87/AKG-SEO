@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import Box from 'common/src/components/Box';
 import Text from 'common/src/components/Text';
 import Heading from 'common/src/components/Heading';
+import Input from 'common/src/components/Input';
 import Button from 'common/src/components/Button';
 import FeatureBlock from 'common/src/components/FeatureBlock';
 import Container from 'common/src/components/UI/Container';
@@ -21,13 +22,37 @@ const BannerSection = ({
 }) => {
   const ButtonGroup = () => (
     <Fragment>
-      <Button title="LEARN MORE" {...btnStyle} />
-      <Button
-        title="WATCH WORKS"
-        variant="textButton"
-        icon={<i className="flaticon-next" />}
-        {...outlineBtnStyle}
-      />
+      <Container>
+        <Box >
+          <Heading content="Get Your Free Quote Today!"  />
+        </Box>
+        <Box>
+          <Box>
+          <Input
+              inputType="name"
+              isMaterial={false}
+              placeholder="Name"
+              name="name"
+              aria-label="name"
+            />
+            <Input
+              inputType="email"
+              isMaterial={false}
+              placeholder="Email Address"
+              name="email"
+              aria-label="email"
+            />
+            <Input
+              inputType="phone"
+              isMaterial={false}
+              placeholder="Phone Number"
+              name="phone"
+              aria-label="phone"
+            />
+            <Button type="button" title="SEND MESSAGE" {...btnStyle} />
+          </Box>
+        </Box>
+      </Container>
     </Fragment>
   );
   return (
@@ -37,19 +62,20 @@ const BannerSection = ({
         <Box className="row" {...row}>
           <Box className="col" {...col}>
             <DiscountLabel>
-              <Text content="25% Discount" {...discountAmount} />
-              <Text content="on every first project budget" {...discountText} />
+              <Text content="Free Estimates!" {...discountAmount} />
+              <Text content="on all residential and commercial roofs!" {...discountText} />
             </DiscountLabel>
             <FeatureBlock
               title={
                 <Heading
-                  content="With Knowledge, Passion, Heart & Soul Agencies"
-                  {...title}
+                  content="AKG Roofing and Specialty Services, INC"
+                                    {...title}
                 />
               }
               description={
                 <Text
-                  content="Agencies around the world are moving to the digital agencies. So, It is high time to introduce your agency digitaly ."
+                  content="Repairs, Replaces, and Maintains
+                  YOUR Life Investment!"
                   {...description}
                 />
               }
