@@ -18,7 +18,7 @@ const BannerWrapper = styled.section`
     padding-bottom: 100px;
   }
   @media only screen and (max-width: 480px) {
-    background: none;
+    //background: none;
     padding-top: 130px;
     padding-bottom: 60px;
   }
