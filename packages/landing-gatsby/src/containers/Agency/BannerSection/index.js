@@ -77,7 +77,7 @@ const BannerSection = ({
                 <Text className="bgContainer"
                   content="Repairs, Replaces, and Maintains
                   YOUR Life Investment!"
-                  {...description}
+                  {/*...description*/...sectionTitle}
                 />
               }
               button={<ButtonGroup />}

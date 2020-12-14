@@ -45,14 +45,14 @@ const BannerWrapper = styled.section`
   padding: 7px 25px;
   box-shadow: 0px 4px 50px 0px rgba(22, 53, 76, 0.08);
   margin-bottom: 30px;
-  background-color: ${themeGet('colors.white', '#ffffff')};
+  background-color: ${themeGet('colors.blue', '#AAC4DB')};
   }
   .bgContainerTitle{
     border-radius: 4em;
   padding: 7px 50px;
   box-shadow: 0px 4px 50px 0px rgba(22, 53, 76, 0.08);
   margin-bottom: 30px;
-  background-color: ${themeGet('colors.white', '#ffffff')};
+  background-color: ${themeGet('colors.white', '#AAC4DB')};
   }
   .button__wrapper {
     margin-top: 40px;

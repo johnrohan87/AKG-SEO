@@ -114,6 +114,10 @@ const Navbar = ({ navbarStyle, logoStyle }) => {
           title="Agency"
           logoStyle={logoStyle}
         />
+        <div style={{ display: 'd-flex', alignItems: 'center' }}>
+          <div>AKG Roofing and Specialty Services, INC</div> 
+          <a href="tel:+13055498081">(305) 549-8081</a>
+        </div>
         <div style={{ display: 'flex', alignItems: 'center' }}>
           <Button
             variant="textButton"
