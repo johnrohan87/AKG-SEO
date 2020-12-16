@@ -119,7 +119,7 @@ const Navbar = ({ navbarStyle, logoStyle }) => {
           <a href="tel:+13055498081">(305) 549-8081</a>
         </div>
         <div style={{ display: 'flex', alignItems: 'center' }}>
-          <Button
+          {/*<Button
             variant="textButton"
             onClick={handleSearchModal}
             icon={<i className="flaticon-magnifying-glass" />}
@@ -130,7 +130,7 @@ const Navbar = ({ navbarStyle, logoStyle }) => {
             onClick={handleLoginModal}
             icon={<i className="flaticon-user" />}
             aria-label="login"
-          />
+          />*/}
           <Drawer
             width="420px"
             placement="right"
