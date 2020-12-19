@@ -57,7 +57,7 @@ export default () => {
   return (
     <ThemeProvider theme={appTheme}>
       <Fragment>
-        <SEO title="App | A react next landing page" />
+        <SEO title="AKG Roofing and Specialty Services, INC" />
         <Modal />
         <ResetCSS />
         <GlobalStyle />

@@ -26,8 +26,8 @@ export default () => {
       <Fragment>
         {/* Start agency head section */}
         <Head>
-          <title>Agency | A react next landing page</title>
-          <meta name="Description" content="React next landing page" />
+          <title>AKG Roofing and Specialty Services, INC</title>
+          <meta name="Description" content="AKG Roofing and Specialty Services, INC" />
           <meta name="theme-color" content="#10ac84" />
 
           {/* Load google fonts */}

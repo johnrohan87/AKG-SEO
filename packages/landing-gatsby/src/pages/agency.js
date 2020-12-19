@@ -26,7 +26,7 @@ export default () => {
   return (
     <ThemeProvider theme={agencyTheme}>
       <Fragment>
-        <SEO title="Agency" />
+        <SEO title="AKG Roofing and Specialty Services, INC" />
         <Modal />
         <ResetCSS />
         <GlobalStyle />
