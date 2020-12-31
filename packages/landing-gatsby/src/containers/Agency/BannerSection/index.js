@@ -9,6 +9,8 @@ import FeatureBlock from 'common/src/components/FeatureBlock';
 import Container from 'common/src/components/UI/Container';
 import Particles from '../../Agency/Particle';
 import BannerWrapper, { DiscountLabel } from './bannerSection.style';
+import { navigate } from 'gatsby-link'
+import { propTypes } from 'react-stickynode/dist/Sticky';
 
 const BannerSection = ({
   row,
@@ -21,41 +23,12 @@ const BannerSection = ({
   outlineBtnStyle,
   sectionTitle,
 }) => {
-  const ButtonGroup = () => (
-    <Fragment>
-      <Container>
-        <Box >
-          <Heading className="bgContainer" content="Get Your Free Quote Today!" {...sectionTitle} />
-        </Box>
-        <Box>
-          <Box>
-          <Input
-              inputType="name"
-              isMaterial={false}
-              placeholder="Name"
-              name="name"
-              aria-label="name"
-            />
-            <Input
-              inputType="email"
-              isMaterial={false}
-              placeholder="Email Address"
-              name="email"
-              aria-label="email"
-            />
-            <Input
-              inputType="phone"
-              isMaterial={false}
-              placeholder="Phone Number"
-              name="phone"
-              aria-label="phone"
-            />
-            <Button type="button" title="SEND MESSAGE" {...btnStyle} />
-          </Box>
-        </Box>
-      </Container>
-    </Fragment>
-  );
+  
+  const [nameInput, setNameInput] = React.useState("")
+  const [emailInput, setEmailInput] = React.useState("")
+  const [messageInput, setMessageInput] = React.useState("")
+
+
   return (
     <BannerWrapper>
       <Particles />
@@ -80,8 +53,35 @@ const BannerSection = ({
                   {/*...description*/...sectionTitle}
                 />
               }
-              button={<ButtonGroup />}
+              //button={<ButtonGroup />}
+
             />
+            <form>
+              <Input inputType="text"
+              isMaterial={false}
+              placeholder="Name"
+              name="name"
+              aria-label="name"
+              onChange={(e)=>setNameInput(e)}
+              />
+              <Input
+              inputType="email"
+              isMaterial={false}
+              placeholder="Email Address"
+              name="email"
+              aria-label="email"
+              onChange={(e)=>setEmailInput(e)}
+            />
+            <Input
+              inputType="textarea"
+              isMaterial={false}
+              placeholder="Message"
+              name="message"
+              aria-label="message"
+              onChange={(e)=>setMessageInput(e)}
+            />
+            <Button type="button" title="SEND MESSAGE" {...btnStyle} onClick={(e)=>{console.log(nameInput,emailInput,messageInput)}} />
+            </form>
           </Box>
         </Box>
       </Container>
@@ -90,6 +90,7 @@ const BannerSection = ({
 };
 
 BannerSection.propTypes = {
+  value: PropTypes.object,
   title: PropTypes.object,
   btnStyle: PropTypes.object,
   description: PropTypes.object,

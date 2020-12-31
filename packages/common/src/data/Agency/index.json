@@ -59,38 +59,20 @@
   "features": [{
       "id": 1,
       "icon": "flaticon-flask",
-      "title": "Search Optimization",
-      "description": "By using Search Engine Optimization, You will get more Clients"
+      "title": "Free Roof Inspection",
+      "description": "Our roof inspector will be looking for leaks, unusual wear and tear, damage caused by windblown debris, organic growth issues, and problems that may have occurred during roof installation or subsequent repairs."
     },
     {
       "id": 2,
       "icon": "flaticon-pencil-case",
-      "title": "Ui/UX Design",
-      "description": "We provide the best UI/UX Design by following the latest trends of the market ."
+      "title": "Personalized Quotes",
+      "description": "We provide industry leading roofing products and installation techniques stialized for your needs."
     },
     {
       "id": 3,
       "icon": "flaticon-ruler",
-      "title": "Wireframing Task",
-      "description": "We respect our customer opinions and deals with them with perfect wireframing "
-    },
-    {
-      "id": 4,
-      "icon": "flaticon-startup",
-      "title": "Business Solutions",
-      "description": "We are commited to provide proper business solutions with reasonable pricing"
-    },
-    {
-      "id": 5,
-      "icon": "flaticon-briefing",
-      "title": "Business Analysis",
-      "description": "A day to day report about your ongoing business for proper understanding"
-    },
-    {
-      "id": 6,
-      "icon": "flaticon-creative",
-      "title": "Content Management",
-      "description": "Proper Content Management is important to find out the real clients for your agencies"
+      "title": "Expert Installers",
+      "description": "Our installers and service experts ensure our products are installed with pride and exceed your expectations."
     }
   ],
   "qualityFeature": [{
@@ -276,11 +258,7 @@
   "menuWidget": [{
       "id": 1,
       "title": "About Us",
-      "menuItems": [{
-          "id": 1,
-          "url": "#1",
-          "text": "Support Center"
-        },
+      "menuItems": [
         {
           "id": 2,
           "url": "#2",
@@ -290,16 +268,6 @@
           "id": 3,
           "url": "#3",
           "text": "About Us"
-        },
-        {
-          "id": 4,
-          "url": "#4",
-          "text": "Copyright"
-        },
-        {
-          "id": 5,
-          "url": "#5",
-          "text": "Popular Campaign"
         }
       ]
     },
@@ -332,87 +300,13 @@
           "text": "Store Hours"
         }
       ]
-    },
-    {
-      "id": 3,
-      "title": "My Account",
-      "menuItems": [{
-          "id": 1,
-          "url": "#1",
-          "text": "Press inquiries"
-        },
-        {
-          "id": 2,
-          "url": "#2",
-          "text": "Social media directories"
-        },
-        {
-          "id": 3,
-          "url": "#3",
-          "text": "Images & B-roll"
-        },
-        {
-          "id": 4,
-          "url": "#4",
-          "text": "Permissions"
-        },
-        {
-          "id": 5,
-          "url": "#5",
-          "text": "Speaker requests"
-        }
-      ]
-    },
-    {
-      "id": 4,
-      "title": "Policy",
-      "menuItems": [{
-          "id": 1,
-          "url": "#1",
-          "text": "Application security"
-        },
-        {
-          "id": 2,
-          "url": "#2",
-          "text": "Software principles"
-        },
-        {
-          "id": 3,
-          "url": "#3",
-          "text": "Unwanted software policy"
-        },
-        {
-          "id": 4,
-          "url": "#4",
-          "text": "Responsible supply chain"
-        }
-      ]
     }
   ],
-  "social_profile": [{
+  "social_profile": [
+    {
       "id": 1,
-      "icon": "flaticon-facebook-logo",
-      "link": "https://www.facebook.com/redqinc/"
-    },
-    {
-      "id": 2,
-      "icon": "flaticon-twitter-logo-silhouette",
-      "link": "https://twitter.com/redqinc"
-    },
-    {
-      "id": 3,
       "icon": "flaticon-instagram",
-      "link": "https://www.instagram.com/redqinc/"
-    },
-    {
-      "id": 4,
-      "icon": "flaticon-tumblr-logo",
-      "link": "https://www.instagram.com/redqinc/"
-    },
-    {
-      "id": 5,
-      "icon": "flaticon-dribble-logo",
-      "link": "https://dribbble.com/redqinc"
+      "link": "https://www.instagram.com/akgspecialtyservices/"
     }
   ]
 }

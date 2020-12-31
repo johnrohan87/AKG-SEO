@@ -290,7 +290,7 @@ const data = {
       expend: true,
       title: 'How to contact with Customer Service?',
       description:
-        'Our Customer Experience Team is available 7 days a week and we offer 2 ways to get in contact.Email and Chat . We try to reply quickly, so you need not to wait too long for a response!. ',
+        'Our Customer Experience Team is available 7 days a week and we offer 2 ways to get in contact Email and Phone (305) 549-8081 . We try to reply quickly, so you need not to wait too long for a response!. ',
     },
     {
       id: 2,
