@@ -3,7 +3,7 @@ FROM mhart/alpine-node:11 AS builder
 WORKDIR /app
 COPY packages/landing-gatsby /app
 
-FROM nginx:alpine
+FROM nginx:1.29.5-alpine3.23
 
 COPY nginx /etc/nginx/
 COPY --from=builder --chown=nginx:nginx /app/public /usr/share/nginx/html
